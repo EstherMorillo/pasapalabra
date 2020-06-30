@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="header">
+        <div id="modal__window" class="modal__window">
+            <div id="modal__content" class="modal__content">
+                <h1 class="title">Bienvenidxs al juego de Pasapalabra del COVID-19</h1><br>
+                <p class="paragraph">Basado en el exitoso juego de televisión, tendrás que ir acertando las definiciones que saldrán por cada letra del abecedario.</p><br>
+                <p class="paragraph">Procura no enfadar al VIRUS, que no queremos que haya un rebrote.</p><br>
+                <p class="paragraph">El VIRUS no conoce las normas de acentuación, así que debes introducir las respuestas sin tildes.</p><br>
+                <p class="paragraph">Una vez introducida la palabra tienes 3 botones:</p><br>
+
+                <div class="small__buttons">
+                    <div class="img small__check paragraph__button"></div>
+                        <p class="paragraph__button">Pulsando este botón o la tecla ENTER del teclado sabrás si tu respuesta es correcta o no.</p>
+                    <div class="img small__light paragraph__button"></div>
+                        <p class="paragraph__button">Pulsando este botón o la tecla ESPACIO del teclado podrás pasar a la siguiente palabra y, de esta manera, tener tiempo para pensar la respuesta y contestar en la siguiente vuelta.</p>
+                    <div class="img small__cancel paragraph__button"></div>
+                        <p class="paragraph__button">Pulsando este botón o la tecla ESCAPE del teclado cancelarás el juego.</p>
+                </div>
+                
+                <div id="container__playerName" class="container__playerName">
+                    <div>Introduce tu nombre:
+                        <input id="playerName" class="playerName" type="text" value="" maxlength="15">
+                    </div>                    
+                    <div id="start__button" class="start__button">¿Te atreves a jugar?</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div id="modal__window--ranking" class="modal__window--ranking">
+                <div id="modal__content--ranking" class="modal__content--ranking">
+                    <h2 class="title">Ranking Top3 COVID-19</h2><br>
+                    <ul id="rankingContent" class="rankingContent">
+                        
+                    </ul> 
+                     <div id="againStart__button" class="againStart__button">¿Otra partida?</div>
+                </div>
+                
+            </div>
+
+            
+            <div id="time" class="time">Time</div>
+            
+            <div class="circle">
+                
+                <img id="virus" class="virus" src="./img/virus.png" alt="virus-player">
+        
+                <div id="a" class="letters a">A</div>
+                <div id="b" class="letters b">B</div>
+                <div id="c" class="letters c">C</div>
+                <div id="d" class="letters d">D</div>
+                <div id="e" class="letters e">E</div>
+                <div id="f" class="letters f">F</div>
+                <div id="g" class="letters g">G</div>
+                <div id="h" class="letters h">H</div>
+                <div id="i" class="letters i">I</div>
+                <div id="j" class="letters j">J</div>
+                <div id="l" class="letters l">L</div>
+                <div id="m" class="letters m">M</div>
+                <div id="n" class="letters n">N</div>
+                <div id="ñ" class="letters ñ">Ñ</div>
+                <div id="o" class="letters o">O</div>
+                <div id="p" class="letters p">P</div>
+                <div id="q" class="letters q">Q</div>
+                <div id="r" class="letters r">R</div>
+                <div id="s" class="letters s">S</div>
+                <div id="t" class="letters t">T</div>
+                <div id="u" class="letters u">U</div>
+                <div id="v" class="letters v">V</div>
+                <div id="x" class="letters x">X</div>
+                <div id="y" class="letters y">Y</div>
+                <div id="z" class="letters z">Z</div>
+            </div>
+            
+            <div id="points" class="points">Points</div>
+            
+        </div>
+        <div class="questions-container">
+            <div id="question-box" class="question">Questions
+                <div id="current-letter" class="current-letter"></div>
+            </div>
+            
+        </div>
+        <div class="answers-container">
+            <input type="text" id="answer-box" class="answer" value="" placeholder="Write your answer">
+            <div id="buttons" class="buttons">
+                <div id="button-ok" class="button ok"></div>
+                <div id="button-pasapalabra" class="button pasapalabra"></div>
+                <div id="button-cancel" class="button cancel"></div>
+            </div>
+        </div>
+    </div>
+       
+    
+    <script src="./index.js"></script>
+</body>
+</html>
